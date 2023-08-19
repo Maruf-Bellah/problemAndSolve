@@ -144,10 +144,4 @@ console.log(test);
 
 
 
-// ============================================================
-// condition chara ekta lop chalabe and tar moddhe sob guli bejor sonkha hobe 
-// =============================================================
-for(let i = 0; i <= 50; i = i + 2 ){
-    console.log(i);
-}
 
