@@ -118,6 +118,7 @@ if (isTrue === true) {
 } else {
     console.log('this is a false');
 
+}
 
 
 
@@ -126,21 +127,21 @@ if (isTrue === true) {
 
 // sum er vitore sob array er jog fol guli 
 
-let myArray = [1, 2,3,4,5,6,7,8,9,10];
+// let myArray = [1, 2,3,4,5,6,7,8,9,10];
 
-let sum = 0;
-for(let a = 0; a < myArray.length; a++){
-    sum = sum + myArray[a];
-}
-console.log(sum);
+// let sum = 0;
+// for(let a = 0; a < myArray.length; a++){
+//     sum = sum + myArray[a];
+// }
+// console.log(sum);
 
 
-let test = 0;
-for(let i = 0; i < myArray.length; i++){
-    test = test + myArray[i]
-    // console.log(show);
-}
-console.log(test);
+// let test = 0;
+// for(let i = 0; i < myArray.length; i++){
+//     test = test + myArray[i]
+//     // console.log(show);
+// }
+// console.log(test);
 
 
 
