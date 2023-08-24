@@ -22,20 +22,12 @@
 // ============================================================
 // condition chara ekta lop chalabe and tar moddhe sob guli bejor sonkha hobe
 // =============================================================
-for (let i = 1; i <= 50; i = i + 2) {
-  // console.log(i);
-}
+// for (let i = 1; i <= 10; i = i + 2) {
+//   // console.log(i);
+// }
 
 
-function sum(i){
-  if(i == i){
-      return i;
-  }
-  return i + sum(i+1);
-};
 
-let result = sum(5);
-// console.log(result);
 
 
 
@@ -109,13 +101,13 @@ let result = sum(5);
 
 
 
-function addfriend(friend){
-  let add = 15 + 20;
-  return friend(add)
-};
+// function addfriend(friend){
+//   let add = 15 + 20;
+//   return friend(add)
+// };
 
-addfriend(akbarVai);
+// addfriend(akbarVai);
 
-function akbarVai(perams){
-  console.log(perams);
-}
+// function akbarVai(perams){
+//   console.log(perams);
+// }
