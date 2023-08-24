@@ -13,4 +13,8 @@ for(let show of shawon){
     }
     delete emtyObj[' '];
 }
-console.log(emtyObj);
+// console.log(emtyObj);
+
+for (let i = 0; i <= 10; i++) {
+  console.log(1);
+}
