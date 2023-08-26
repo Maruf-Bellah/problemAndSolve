@@ -1,6 +1,6 @@
 
 
-// recurtion মানে একটা function এর মধ্যে ঐ function কে বার বার কল করা কে recurtion বলে ==========
+// recurtion মানে একটা function এর মধ্যে ঐ function/ same function কে বার বার কল করা কে recurtion বলে ==========
 
 
 function sum(i){
