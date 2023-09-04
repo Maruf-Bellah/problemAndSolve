@@ -93,4 +93,38 @@ function removeDublicate(names){
   return unique;
 }
 const show = removeDublicate(names)
-console.log(show);
+// console.log(show);
+
+// sujon vaiyer problem 18 and 18 er niche jara ace tader dekhate hobe 
+
+let obj = [
+  {
+      "name": 'maruf',
+      "age": '12',
+      "address": 'khulna',
+      "status": 'marride',
+  },
+  {
+      "name": 'sima',
+      "age": '32',
+      "address": 'khulna',
+      "status": 'marride',
+  },
+  {
+      "name": 'sakil',
+      "age": '7',
+      "address": 'khulna',
+      "status": 'marride',
+  },
+  {
+      "name": 'sawan',
+      "age": '18',
+      "address": 'khulna',
+      "status": 'marride',
+    }
+];
+
+let nabaleg = obj.filter(person => parseInt(person.age) <= 18);
+
+let showAge = nabaleg.map(person => person.name);
+console.log(showAge);
