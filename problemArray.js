@@ -96,7 +96,7 @@ const show = removeDublicate(names)
 // console.log(show);
 
 // sujon vaiyer problem 18 and 18 er niche jara ace tader dekhate hobe 
-
+/* 
 let obj = [
   {
       "name": 'maruf',
@@ -124,7 +124,129 @@ let obj = [
     }
 ];
 
-let nabaleg = obj.filter(person => parseInt(person.age) <= 18);
+let nabaleg = obj.filter(person => (person.age) <= 18);
+console.log(nabaleg);
 
 let showAge = nabaleg.map(person => person.name);
 console.log(showAge);
+ */
+
+
+
+// সুজন ভাইয়ের প্রবলেম সলব করা হয়েছে 
+
+
+let units = [
+  {
+      id:1,
+      name:'ton',
+  },
+  {
+      id:2,
+      name:'box',
+  },
+  {
+      id:3,
+      name:'pice',
+  }
+]
+
+let products = [
+  {
+      id:1,
+      name:'Elsa Luxury Digital Printed Unstiched Kurti',
+      unitId: 3,
+      price: 10
+  },
+  {
+      id:2,
+      name:'Sunehri Luxury Printed 3pcs',
+      unitId: 2,
+      price: 30
+  },
+  {
+      id:3,
+      name:'Sunehry VOL-6 Digital Printed Unstitched 3pcs',
+      unitId: 2,
+      price: 50,
+  },
+  {
+      id:3,
+      name:'Sunehry VOL-6 Digital Printed Unstitched 3pcs',
+      unitId: 1,
+      price: 0,
+  }
+]
+
+// const obj ={};
+
+// for(const key of units){
+//   const show = key;
+//   console.log(show);
+// }
+
+
+
+
+// i want this products to transformation products list example
+
+
+// let result = [
+//   {
+//       id:1,
+//       name:'Elsa Luxury Digital Printed Unstiched Kurti',
+//       unitInfo: {
+//           id:3,
+//           name:'pice',
+//       },
+//       price: 10
+//   },
+//   {
+//       id:2,
+//       name:'Sunehri Luxury Printed 3pcs',
+//       unitInfo: {
+//           id:2,
+//           name:'box',
+//       },
+//       price: 30
+//   },
+//   {
+//       id:3,
+//       name:'Sunehry VOL-6 Digital Printed Unstitched 3pcs',
+//       unitInfo: {
+//           id:2,
+//           name:'box',
+//       },
+//       price: 50
+//   },
+//   {
+//       id:3,
+//       name:'Sunehry VOL-6 Digital Printed Unstitched 3pcs',
+//       unitInfo: {
+//           id:1,
+//           name:'ton',
+//       },
+//       price: 0
+//   }
+// ]
+
+
+
+let result = products.map((product) => {
+  // Find the corresponding unit information for the product
+  const unitInfo = units.find((unit) => unit.id === product.unitId);
+  console.log(unitInfo);
+
+  // Create a new object with the desired structure
+  return {
+    id: product.id,
+    name: product.name,
+    unitInfo: {
+      id: unitInfo.id,
+      name: unitInfo.name,
+    },
+    price: product.price,
+  };
+});
+
+// console.log(result);
