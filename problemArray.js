@@ -178,12 +178,7 @@ let products = [
   }
 ]
 
-// const obj ={};
 
-// for(const key of units){
-//   const show = key;
-//   console.log(show);
-// }
 
 
 
@@ -232,21 +227,23 @@ let products = [
 
 
 
-let result = products.map((product) => {
+let result = products.map((pro) => {
   // Find the corresponding unit information for the product
-  const unitInfo = units.find((unit) => unit.id === product.unitId);
+
+  // ekhane units er id o name guli k ber kora hoyese 
+  const unitInfo = units.find((unit) => unit.id === pro.unitId);
   console.log(unitInfo);
 
-  // Create a new object with the desired structure
+  // ekta new object bananno holo
   return {
-    id: product.id,
-    name: product.name,
+    id: pro.id,
+    name: pro.name,
     unitInfo: {
       id: unitInfo.id,
       name: unitInfo.name,
     },
-    price: product.price,
+    price: pro.price,
   };
 });
 
-// console.log(result);
+console.log(result);

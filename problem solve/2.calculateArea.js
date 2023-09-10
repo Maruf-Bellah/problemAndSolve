@@ -1,0 +1,1 @@
+// 2. **Calculate Area**: Create a function that calculates and returns the area of a rectangle given its length and width as parameters.
